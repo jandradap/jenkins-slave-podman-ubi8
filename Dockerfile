@@ -91,3 +91,5 @@ LABEL author="Alan Christie (alanbchristie)"
 # We're root at this stage of the script, so leave the USER alone.
 # Do not return to the underlying user id (1001).
 WORKDIR ${HOME}
+
+RUN yum -y reinstall containers-common
